@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/rage-italic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="first-view" id="myportfolio">
+        <p>My Portfolio</p>
+    </div>
+    
+    <header>
+        <h2><a href="#myportfolio">My Portfolio</a></h2>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#works">Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1 id="works">Works</h1>
+
+            <div class="contents">
+                <div class="wks">
+                    <a href="assets/works/bakery/index.html" target="_blank">
+                        <img src="assets/img/bakery.png" alt="WCB Bakery">
+                    </a>
+                    <a href="assets/works/bakery/index.html" target="_blank" class="title">WCB Bakery</a>
+                </div>
+
+                <div class="wks">
+                    <a href="assets/img/meisi.png" target="_blank">
+                        <img src="assets/img/meisi.png" alt="名刺">
+                    </a>
+                    <a href="assets/img/meisi.png" target="_blank" class="title">名刺</a>
+                </div>
+
+                <div class="wks">
+                    <a href="assets/works/oriental_autumm/index.html" target="_blank">
+                        <img src="assets/img/oriental_autumm.png" alt="東洋の秋">
+                    </a>
+                    <a href="assets/works/oriental_autumm/index.html" target="_blank" class="title">東洋の秋</a>
+                </div>
+
+                <div class="wks">
+                    <a href="assets/works/umaemon/index.html" target="_blank">
+                        <img src="assets/img/umaemon.png" alt="高田馬場 馬右衛門">
+                    </a>
+                    <a href="assets/works/umaemon/index.html" target="_blank" class="title">高田馬場 馬右衛門</a>
+                </div>
+
+                <div class="wks">
+                    <a href="assets/works/sample_web/index.html" target="_blank">
+                        <img src="assets/img/sample_web.png" alt="Sample Web">
+                    </a>
+                    <a href="assets/works/sample_web/index.html" target="_blank" class="title">Sample Web</a>
+                </div>
+
+                <div class="wks">
+                    <a href="assets/works/cat_blog/single.html" target="_blank">
+                        <img src="assets/img/cat_blog.png" alt="CAT BLOG">
+                    </a>
+                    <a href="assets/works/cat_blog/single.html" target="_blank" class="title">CAT BLOG</a>
+                </div>
+            </div>
+        </section><!-- contents -->
+
+        <section>
+            <h1 id="about">About</h1>
+    
+            <div class="profile">
+                <div class="text">
+                    <div class="me">
+                        <div class="name">
+                            <p class="self">Yuzuki Morita</p>
+                            <h2>森田 柚樹</h2>
+                        </div>
+    
+                        <div class="major">
+                            <p class="self">スーパーITエンジニア専攻２年</p>
+                        </div>
+                    </div>
+    
+                    <p class="detail">
+                        東京の専門学校でITについて勉強しています。<br>
+                        2003年生まれ。千葉県出身。
+                    </p>
+    
+                    <h3>東京デザインテクノロジーセンター専門学校</h3>
+                    <p class="school_detail">
+                        〒169-0075  東京都新宿区高田馬場2-11-10<br>
+                        Tel 0120-00-5596<br>
+                        E-mail TTC22C1010017@edu.tech.ac.jp
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="assets/img/school_logo.png" alt="学校のロゴ">
+                </div>
+            </div>
+        </section><!-- profile -->
+
+        <section>
+            <h1 id="skill">Skill</h1>
+
+            <div class="graph">
+                <canvas id="chart"></canvas>
+            </div>
+        </section><!-- skill -->
+
+
+        <section>
+            <h1 id="contact">Contact</h1>
+            
+            <div class="Form">
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</p>
+                    <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+                </div>
+
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+                    <input type="text" class="Form-Item-Input" placeholder="例）090-1234-5678">
+                </div>
+
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                    <input type="email" class="Form-Item-Input" placeholder="例）example@sample.com">
+                </div>
+
+                <div class="Form-Item">
+                    <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                    <textarea class="Form-Item-Textarea"></textarea>
+                </div>
+
+                <input type="submit" class="Form-Btn" value="送信する">
+            </div>
+        </section><!-- contact -->
+    </main>
+
+    <footer>
+        <small class="copright">Copyright 2023</small>
+        My Portfolio
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

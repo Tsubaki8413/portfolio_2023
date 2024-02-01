@@ -1,0 +1,137 @@
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    line-height: 1;
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.6em;
+}
+
+
+/* --- header --- */
+header{
+    background: #4B6E2D;
+    padding: 1rem 0;
+}
+header h1{
+    text-align: center;
+}
+header .logo{
+    width: 10rem;
+}
+
+
+/* --- section --- */
+section{
+    padding: 10rem 0;
+    text-align: center;
+    background: #212121;
+}
+section h2, section p{
+    text-shadow: 0.1rem 0.1rem 0.4rem #212121;
+}
+section h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+section h2 .en{
+    display: block;
+    font-size: 0.6em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+section p{
+    line-height: 3;
+}
+
+
+/* --- button --- */
+.btn_detail{
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 14em;
+    margin: 6rem auto 0;
+    padding: 1em 0;
+    border: 0.1rem solid white;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    transition: 0.3s all;
+}
+.btn_detail:hover{
+    background: white;
+    color: #4B6E2D;
+}
+
+
+/* --- #first-view --- */
+#first-view{
+    height: 80vh;
+    background: url(https://source.unsplash.com/_EMTtTEioWo/) center/cover no-repeat;
+    position: relative;
+}
+#first-view h2{
+    position: absolute;
+    top: 4em;
+    left: 10%;
+    font-family: "Shippori Mincho", serif;
+    color: #212121;
+    font-size: 4rem;
+    text-shadow: none;
+}
+
+
+/* --- #about --- */
+#about{
+    background-image: url(https://source.unsplash.com/t2kAfymBHGY);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: #444;
+}
+#about .btn_detail{
+    margin-top: 10rem;
+}
+
+
+/* --- #products --- */
+#products{
+    width: 50%;
+    position: relative;
+    background: url(../img/bg_umaemon.svg) center/40% no-repeat #62893a;
+}
+#products::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: url(https://source.unsplash.com/v1OW17UcR-Q) center/cover no-repeat;
+}
+
+
+/* --- #shop-event --- */
+#shop-event{
+    background: url(https://source.unsplash.com/UgojrqCaNu0/) center/cover no-repeat;
+}
+#shop-event .btn_detail{
+    margin-top: 30rem;
+}
+
+
+/* --- footer --- */
+footer{
+    background: #4B6E2D;
+    padding: 2rem 0;
+    text-align: center;
+}

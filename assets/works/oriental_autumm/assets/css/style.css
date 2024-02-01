@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+/************************************************************
+*/
+/*	Common
+*/
+/***********************************************************/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    min-width: 1200px;
+}
+
+body{
+    line-height: 1.0;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.4em;
+    letter-spacing: .2em;
+    background: #fbe9e7;
+}
+
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+/*==================================
+*/
+/*		#main-visual
+*/
+/*================================*/
+#main-visual{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/autumn.jpg) center/cover no-repeat;
+}
+#main-visual .inner{
+    margin-top: auto;
+    margin-bottom: 0;
+    color: #fff;
+}
+#main-visual + section{
+    margin: 0;
+}
+#main-visual + section .inner{
+    margin-top: 0;
+}
+
+
+/*================================*/
+section + section{
+    margin-top: 16rem;
+}
+
+.bg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg img{
+    width: calc(75rem + (100% - 75rem) / 2);
+    margin-bottom: 8rem;
+}
+.bg .right img{
+    margin-left: auto;
+}
+.bg .left img{
+    margin-right: auto;
+}
+
+.inner{
+    width: 75rem;
+    margin: auto;
+}
+
+h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+h2 span{
+    display: block;
+    color: #546e7a;
+    font-family: 'Tangerrine', cursive;
+    font-weight: normal;
+    margin-top: .25em;
+}
+
+.author{
+    font-size: 1.5em;
+}
+
+.profile{
+    font-size: 1.2em;
+    line-height: 2.0;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 2.0;
+}
+p + p{
+    margin-top: 1.5em;
+}
+
+
+/*-------------------------
+/*	.slide-in
+-------------------------*/
+.slide-in{
+    display: block;
+    width: 100%;
+    height: 40rem;
+    margin-top: 10rem;
+    background: linear-gradient(90deg, black 50%, white 100%);
+    color: #fff;
+    transition: transform 1s cubic-bezier(0.7, 0, 0.84, 0);
+    transform: translateX(-100%);
+    opacity: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    padding-left: 8rem;
+}
+.slide-in .more{
+    position: absolute;
+    bottom: 5rem;
+    left: 8rem;
+    display: block;
+    border: solid 0.2rem #fff;
+    font-size: .25em;
+    padding: 1em;
+    transition: all .6s;
+}
+.slide-in img{
+    position: absolute;
+    right: 0;
+    margin: auto;
+    width: auto;
+    height: 40rem;
+    mix-blend-mode: darken;
+}
+/* 表示領域に入った時のスタイル */
+.slide-in .show{
+    transform: translateX(0);
+    opacity: 1;
+}
+.slide-in .show:hover{
+    opacity: .8;
+    color: #fff;
+}
+.slide-in .show:hover .more{
+    background: #fff;
+    color: #231815;
+}
+
+
+
+/*==================================
+*/
+/*		footer
+*/
+/*================================*/
+footer{
+    width: 100%;
+    background: #ffccbc;
+    text-align: center;
+    padding: 5rem 0;
+}
+footer small{
+    display: block;
+    padding: 1em 0;
+}
